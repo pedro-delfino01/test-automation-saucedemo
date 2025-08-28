@@ -5,7 +5,7 @@ Variables   browser_variables.yaml
 
 ***Keywords***
 Abrir Navegador
-    Open Browser    url=${url}
+    Open Browser    url=${url}    browser=chrome
     Maximize Browser Window
 
 
