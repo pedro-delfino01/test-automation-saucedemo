@@ -1,0 +1,9 @@
+user_login: //input[@id="user-name"]
+
+user_password: //input[@id="password"]
+
+login_submit: //input[@id="login-button"]
+
+
+
+error_login: //h3[@data-test="error"]
