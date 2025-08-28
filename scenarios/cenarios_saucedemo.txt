@@ -1,0 +1,52 @@
+CENÁRIOS DE TESTE – SAUCEDEMO (FRONT-END)
+
+=======================================
+🔑 LOGIN
+---------------------------------------
+1. Login válido
+- Dado que o usuário acessa a página inicial do SauceDemo
+- Quando insere usuário 'standard_user' e senha 'secret_sauce'
+- Então deve ser redirecionado para a página de produtos
+
+2. Login inválido (usuário bloqueado)
+- Dado que o usuário acessa a página inicial
+- Quando insere usuário 'locked_out_user' e senha 'secret_sauce'
+- Então deve visualizar mensagem de erro: "Epic sadface: Sorry, this user has been locked out."
+
+3. Login com credenciais vazias
+- Dado que o usuário acessa a página inicial
+- Quando clica em “Login” sem preencher os campos
+- Então deve visualizar a mensagem de erro correspondente
+
+
+=======================================
+🛒 CARRINHO DE COMPRAS
+---------------------------------------
+4. Adicionar item ao carrinho
+- Dado que o usuário está logado
+- Quando adiciona o produto "Sauce Labs Backpack"
+- Então o ícone do carrinho deve exibir quantidade 1
+
+5. Remover item do carrinho
+- Dado que o usuário adicionou um item ao carrinho
+- Quando remove o item
+- Então o carrinho deve ficar vazio
+
+6. Verificar preço no carrinho
+- Dado que o usuário adicionou o produto "Sauce Labs Bike Light"
+- Quando acessa o carrinho
+- Então o preço exibido deve ser igual ao preço da listagem
+
+
+=======================================
+💳 CHECKOUT
+---------------------------------------
+7. Fluxo completo de compra
+- Dado que o usuário tem um item no carrinho
+- Quando acessa o checkout, preenche dados válidos e finaliza a compra
+- Então deve visualizar a mensagem “Thank you for your order!”
+
+8. Checkout com dados incompletos
+- Dado que o usuário acessa o checkout
+- Quando deixa o campo “Postal Code” em branco
+- Então deve visualizar mensagem de erro informando que o campo é obrigatório
