@@ -1,0 +1,23 @@
+header_locator: //div[@id="header_container"]
+
+menu_button_locator: //button[@id="react-burger-menu-btn"]
+
+shop_cart_link_locator: //a[@class="shopping_cart_link"]
+
+product_container_locator: //div[@id="inventory_item_container"]
+
+image_container_locator: //div[@class="inventory_details_img_container"]
+
+product_info_container_locator: //div[@class="inventory_details_desc_container"]
+
+name_product_locator: //div[@class="inventory_details_name large_size"]
+
+desc_product_locator: //div[@class="inventory_details_desc large_size"]
+
+price_product_locator: //div[@class="inventory_details_price"]
+
+button_add_to_cart_locator: //button[@id="add-to-cart"]
+
+button_remove_from_cart_locator: //button[@id="remove"]
+
+numer_products_cart_locator: //span[@class="shopping_cart_badge"]

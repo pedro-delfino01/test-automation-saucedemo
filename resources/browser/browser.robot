@@ -5,8 +5,11 @@ Variables   browser_variables.yaml
 
 ***Keywords***
 Abrir Navegador
-    Open Browser    url=${url}    browser=chrome
+    Open Browser    url=${url}    browser=edge
     Maximize Browser Window
+    Set Selenium Timeout    value=15s
+    Set Selenium Page Load Timeout    value=15s
+    
 
 
 Fechar Navegador
