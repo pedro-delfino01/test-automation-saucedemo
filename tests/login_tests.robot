@@ -4,9 +4,9 @@ Documentation    UI Scenario Tests - SauceDemo
 
 Library          SeleniumLibrary
 
-Resource    ../../resources/browser/browser.robot
-Resource    ../../resources/login_page/login.robot
-Resource    ../../resources/main_page/main_page.robot
+Resource    ../resources/browser/browser.robot
+Resource    ../resources/login_page/login.robot
+Resource    ../resources/main_page/main_page.robot
 
 
 ***Test Cases***
