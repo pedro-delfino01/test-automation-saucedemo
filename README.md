@@ -24,7 +24,7 @@ Siga os passos abaixo para configurar o ambiente e rodar o projeto localmente:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/pedro-delfino01/test-automation-saucedemo](https://github.com/pedro-delfino01/test-automation-saucedemo)
+    git clone https://github.com/pedro-delfino01/test-automation-saucedemo
     cd test-automation-saucedemo
     ```
 
@@ -70,6 +70,7 @@ robot --variable browser:firefox tests/login_tests.robot
 
 ## 📂 Estrutura do Projeto
 
+```bash
 test-automation-saucedemo/
 ├── resources/ # Recursos reutilizáveis (keywords, variáveis e localizadores)
 │ ├── browser/ # Configuração do navegador
@@ -90,6 +91,8 @@ test-automation-saucedemo/
 ├── log.html # Relatório de execução (gerado automaticamente)
 ├── report.html # Relatório detalhado (gerado automaticamente)
 └── output.xml # Arquivo de saída do Robot Framework
+```
+
 
 ## 📄 Relatórios de Resultados
 
