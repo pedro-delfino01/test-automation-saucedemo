@@ -30,3 +30,11 @@ Validar Preço do Produto Selecionado
     Wait Until Element Is Visible    locator=//div[@class="inventory_item_name" and text()="${nome}"]/ancestor::div[@class="cart_item_label"]//div[@class="item_pricebar"]/div[@class="inventory_item_price"]
     ${preço_produto}    Get Text    locator=//div[@class="inventory_item_name" and text()="${nome}"]/ancestor::div[@class="cart_item_label"]//div[@class="item_pricebar"]/div[@class="inventory_item_price"]
     Should Be Equal As Strings    first=${preço_produto}    second=${preco_anterior}
+
+Clicar em Voltar às Compras
+    Wait Until Element Is Visible    locator=${continue_shopping_button_locator}
+    Click Element    locator=${continue_shopping_button_locator}
+
+Clicar em Checkout
+    Wait Until Element Is Visible    locator=${checkout_button_locator}
+    Click Element    locator=${checkout_button_locator}

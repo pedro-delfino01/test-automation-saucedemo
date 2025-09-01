@@ -1,0 +1,23 @@
+header_locator: //div[@id="header_container"]
+
+footer_buttons_locator: //div[@class="checkout_buttons"]
+
+menu_button_locator: //button[@id="react-burger-menu-btn"]
+
+shop_cart_link_locator: //a[@class="shopping_cart_link"]
+
+checkout_header_locator: //div[@class="header_secondary_container"]
+
+checkout_info_locator: //div[@class="checkout_info"]
+
+first_name_locator: //input[@id="first-name"]
+
+last_name_locator: //input[@id="last-name"]
+
+postal_code_locator: //input[@id="postal-code"]
+
+cancel_button_locator: //button[@id="cancel"]
+
+continue_button_locator: //input[@id="continue"]
+
+error_info_required_locator: //h3[@data-test="error"]
